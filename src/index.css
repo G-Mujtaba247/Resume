@@ -6,9 +6,14 @@
   --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
   --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
   --color-brand-500: #6366f1;
   --color-brand-600: #4f46e5;
   --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+  --color-brand-900: #312e81;
+  --color-brand-950: #1e1b4b;
 
   --color-accent-cyan: #06b6d4;
   --color-accent-teal: #14b8a6;
@@ -53,27 +58,55 @@
   .section-padding {
     @apply py-24 px-6 md:px-12 lg:px-24;
   }
+  
   .btn-primary {
     @apply inline-flex items-center justify-center px-6 py-3.5 font-semibold text-sm rounded-xl bg-gradient-to-r from-brand-600 to-accent-violet text-white shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer;
   }
+  
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3.5 font-semibold text-sm rounded-xl bg-white dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700/60 hover:bg-slate-50 dark:hover:bg-slate-700 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer shadow-sm;
+    @apply inline-flex items-center justify-center px-6 py-3.5 font-semibold text-sm rounded-xl bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer shadow-sm;
   }
+  
+  .dark .btn-secondary {
+    @apply bg-slate-800/80 text-slate-200 border-slate-700/60 hover:bg-slate-700;
+  }
+  
   .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3.5 font-semibold text-sm rounded-xl border-2 border-brand-500/70 text-brand-600 dark:text-brand-400 hover:bg-brand-500 hover:text-white dark:hover:text-brand-500 hover:border-brand-500 dark:hover:border-brand-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer;
+    @apply inline-flex items-center justify-center px-6 py-3.5 font-semibold text-sm rounded-xl border-2 border-brand-500/70 text-brand-600 hover:bg-brand-500 hover:text-white hover:border-brand-500 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer;
   }
+  
+  .dark .btn-outline {
+    @apply text-brand-400 hover:bg-brand-500/20 hover:text-brand-400 hover:border-brand-500;
+  }
+  
   .glass-nav {
-    @apply bg-white/75 dark:bg-dark-bg/80 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50;
+    @apply bg-white/75 backdrop-blur-xl border-b border-slate-200/50;
   }
+  
+  .dark .glass-nav {
+    @apply bg-dark-bg/80 border-slate-800/50;
+  }
+  
   .glass-card {
-    @apply bg-white/80 dark:bg-dark-card/90 backdrop-blur-md border border-slate-200/60 dark:border-slate-800/70 rounded-2xl shadow-xl hover:shadow-2xl hover:border-brand-500/20 dark:hover:border-brand-500/30 transition-all duration-300;
+    @apply bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-2xl shadow-xl hover:shadow-2xl hover:border-brand-500/20 transition-all duration-300;
   }
+  
+  .dark .glass-card {
+    @apply bg-dark-card/90 border-slate-800/70 hover:border-brand-500/30;
+  }
+  
   .card {
-    @apply bg-white dark:bg-dark-card/90 border border-slate-200/60 dark:border-slate-800/70 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:border-brand-500/20 dark:hover:border-brand-500/30;
+    @apply bg-white border border-slate-200/60 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:border-brand-500/20;
   }
+  
+  .dark .card {
+    @apply bg-dark-card/90 border-slate-800/70 hover:border-brand-500/30;
+  }
+  
   .gradient-text {
     @apply bg-gradient-to-r from-brand-500 via-accent-violet to-accent-cyan bg-clip-text text-transparent;
   }
+  
   .glow-effect {
     @apply relative after:absolute after:inset-0 after:rounded-2xl after:bg-brand-500/20 after:blur-xl after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-500 after:-z-10;
   }
