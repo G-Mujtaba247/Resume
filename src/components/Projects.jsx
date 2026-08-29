@@ -7,21 +7,24 @@ const Projects = () => {
       description: "A tourism platform showcasing remote landscapes in Pakistan. Features smooth client-side routing, immersive video/image galleries, and localized search filters.",
       tags: ["React 19", "Vite", "Tailwind v4", "Radix UI"],
       image: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      githubUrl: "https://github.com/G-Mujtaba247/tourism"
+      githubUrl: "https://github.com/G-Mujtaba247/tourism",
+      liveUrl: "https://github.com/G-Mujtaba247/tourism"
     },
     {
       title: "Cars & Bikes Showcase",
       description: "A comprehensive digital marketplace portal for vehicles. Integrates a custom React search query builder and an automated Gemini AI-powered advisor chatbot.",
       tags: ["React 19", "Tailwind CSS", "JSON Server", "Gemini AI API"],
       image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      githubUrl: "https://github.com/G-Mujtaba247/Cars-Bikes"
+      githubUrl: "https://github.com/G-Mujtaba247/Cars-Bikes",
+      liveUrl: "https://github.com/G-Mujtaba247/Cars-Bikes"
     },
     {
       title: "eLearning Tracker",
       description: "A secure assignment and dashboard application designed for academic programs. Utilizes JWT auth sessions and charts to visualize assignment completion stats.",
       tags: ["MERN Stack", "MongoDB Atlas", "Node.js", "Express", "Chart.js"],
       image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      githubUrl: "https://github.com/G-Mujtaba247/Student-Assignment-Tracker"
+      githubUrl: "https://github.com/G-Mujtaba247/Student-Assignment-Tracker",
+      liveUrl: "https://github.com/G-Mujtaba247/Student-Assignment-Tracker"
     }
   ];
 
@@ -58,9 +61,11 @@ const Projects = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   </a>
                   <a 
-                    href="#" 
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
                     className="p-3 bg-white dark:bg-slate-900 rounded-xl text-slate-700 dark:text-white hover:scale-110 active:scale-95 transition-transform shadow-md cursor-pointer border border-slate-200/10"
-                    title="Live Demo"
+                    title="View Project"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                   </a>

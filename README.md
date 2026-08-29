@@ -1,16 +1,34 @@
-# React + Vite
+# Ghulam Mujtaba Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Vite + React portfolio website for a MERN Stack developer. The site highlights experience, projects, technical skills, education, and contact details in a polished dark/light theme layout.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive single-page portfolio layout
+- Dark and light mode support
+- Animated hero, cards, and timeline sections
+- Project showcase with GitHub links
+- Contact form with interactive client-side validation
+- Tailwind-based design system
 
-## React Compiler
+## Run locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install dependencies:
+   npm install
+2. Start the app in development mode:
+   npm run dev
+3. Build for production:
+   npm run build
+4. Preview the production build:
+   npm run preview
 
-## Expanding the ESLint configuration
+## Project structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- src/components: page sections and reusable UI blocks
+- src/context: theme management
+- src/index.css: theme variables and shared utility classes
+- public: static assets such as images and icons
+
+## Notes
+
+This project is designed to present a developer portfolio and can be customized with your own bio, projects, and social links.
