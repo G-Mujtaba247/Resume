@@ -40,8 +40,12 @@ const Header = () => {
             <a href="#contact" className="btn-primary w-full sm:w-auto text-center shadow-brand-500/20">
               Let's Collaborate
             </a>
-            <a href="#projects" className="btn-secondary w-full sm:w-auto text-center">
-              Explore Projects
+            <a
+              href="/Ghulam-Mujtaba-Resume.pdf"
+              download="Ghulam-Mujtaba-Resume.pdf"
+              className="btn-secondary w-full sm:w-auto text-center"
+            >
+              Download Resume
             </a>
           </div>
 

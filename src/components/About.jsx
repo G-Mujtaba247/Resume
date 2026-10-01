@@ -65,10 +65,11 @@ const About = () => {
                 Hire Me
               </a>
               <a 
-                href="mailto:g.mujtaba.dev@gmail.com?subject=Resume%20Request"
+                href="/Ghulam-Mujtaba-Resume.pdf"
+                download="Ghulam-Mujtaba-Resume.pdf"
                 className="btn-secondary"
               >
-                Request Resume
+                Download CV
               </a>
             </div>
           </div>
