@@ -4,24 +4,24 @@ const Projects = () => {
   const projects = [
     {
       title: "Explore Pakistan",
-      description: "A tourism platform showcasing remote landscapes in Pakistan. Features smooth client-side routing, immersive video/image galleries, and localized search filters.",
-      tags: ["React 19", "Vite", "Tailwind v4", "Radix UI"],
+      description: "A destination-focused tourism platform for exploring scenic locations across Pakistan, with immersive media, curated travel discovery, and responsive user flows.",
+      tags: ["React 19", "Vite", "Tailwind CSS", "Travel UX"],
       image: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       githubUrl: "https://github.com/G-Mujtaba247/tourism",
       liveUrl: "https://github.com/G-Mujtaba247/tourism"
     },
     {
       title: "Cars & Bikes Showcase",
-      description: "A comprehensive digital marketplace portal for vehicles. Integrates a custom React search query builder and an automated Gemini AI-powered advisor chatbot.",
-      tags: ["React 19", "Tailwind CSS", "JSON Server", "Gemini AI API"],
+      description: "A modern vehicle marketplace featuring filtering, lead-generation interactions, and an AI-powered assistant for product recommendations and buyer guidance.",
+      tags: ["React 19", "Tailwind CSS", "JSON Server", "Gemini API"],
       image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       githubUrl: "https://github.com/G-Mujtaba247/Cars-Bikes",
       liveUrl: "https://github.com/G-Mujtaba247/Cars-Bikes"
     },
     {
       title: "eLearning Tracker",
-      description: "A secure assignment and dashboard application designed for academic programs. Utilizes JWT auth sessions and charts to visualize assignment completion stats.",
-      tags: ["MERN Stack", "MongoDB Atlas", "Node.js", "Express", "Chart.js"],
+      description: "A full-stack academic dashboard for tracking assignments, monitoring learner progress, and visualizing performance through role-based analytics and secure sessions.",
+      tags: ["MERN Stack", "MongoDB Atlas", "Node.js", "Express", "Charts"],
       image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       githubUrl: "https://github.com/G-Mujtaba247/Student-Assignment-Tracker",
       liveUrl: "https://github.com/G-Mujtaba247/Student-Assignment-Tracker"
